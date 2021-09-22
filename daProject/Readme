@@ -1,0 +1,37 @@
+Files included :
+===============
+Makefile
+main.c
+Readme
+placement.m
+
+COMPILING THE CODE:
+==================
+In the folder containing source file and Makefile , type "make"
+OR
+type: "g++ -o ps.out main.c -I."
+
+EXECUTING THE CODE:
+==================
+Example 1: EACG21
+"./Pai_Syed.out  EACG21.net EACG21.are"
+Three output files are created:
+-ps_Placement_summary_EACG21.txt : Contains concise summary for the benchmark,including execution time
+-ps_Placement_EACG21.txt : Stores placement co-ordinates along with cell names
+-ps_matlab_EACG21.txt : Stores placement co-ordinates only - To be used as inout for matlab script
+
+
+Example2: ibm01
+"./ps.out ibm01.net ibm01.are"
+Output files:
+-ps_Placement_summary_ibm01.txt
+-ps_Placement_ibm01.txt
+-ps_matlab_ibm01.txt
+
+
+EXECUTING MATLAB SCRIPT:
+========================
+-Load the matlab script "placement.m"
+-When the script is run , it opens the browser window to ask for the input file.
+-Load the file named ps_matlab_<benchmark>.txt
+-The script displays the standard cells placed in a row
